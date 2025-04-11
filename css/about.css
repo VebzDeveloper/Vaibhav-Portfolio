@@ -1,0 +1,284 @@
+/* ************about.html************ */
+header {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 4.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-head {
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.nav-head a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-head a:hover {
+  color: rgb(72, 119, 221);
+  transform: scale(1.1);
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0 33px;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: rgb(72, 119, 221);
+  transform: scale(1.1);
+}
+
+.about-section-1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  height: auto;
+  padding: 2rem;
+}
+
+.about-section-1 .description {
+  color: white;
+  width: 54vw;
+  max-width: 700px;
+}
+
+.about-section-1 .description h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 2rem 0;
+}
+
+.about-section-1 .description h2 span img {
+  height: 2rem;
+}
+
+.about-section-1 .description .paragraph {
+  font-size: 1.4rem;
+  padding: 14px 0px;
+  font-style: italic;
+}
+
+.about-section-1 .description .quote {
+  text-align: center;
+  color: rgb(72 119 221);
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.about-section-1 .description span {
+  color: rgb(72 119 221);
+}
+
+.about-section-1 .desc-image img {
+  height: 400px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.about-section-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  /* height: auto; */
+  padding: 2rem;
+  color: rgb(72 119 221);
+}
+
+.about-section-2 .programming-icon {
+  font-size: 50px;
+  border: 2px solid rgb(72 119 221);
+  /* border: 2px solid white; */
+  border-radius: 10px;
+  padding: 35px 85px;
+  margin: 20px;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section-2 .programming-icon img {
+  height: 50px;
+  width: 50px;
+}
+
+.about-section-2 .programming-icon:hover {
+  color: #4877dd;
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #4877dd;
+}
+
+.heading {
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.heading h1 {
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.heading span {
+  color: rgb(72 119 221);
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
+
+.footer span {
+  color: rgb(72 119 221);
+}
+
+.footer .footer-icon a {
+  color: white;
+  padding: 0px 10px;
+}
+
+/* ************about.html media-query************ */
+@media screen and (max-width: 992px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .nav-head {
+    margin: 10px 0px;
+    font-size: 1.4rem;
+  }
+
+  nav ul {
+    margin: 10px 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul li {
+    padding: 0 15px;
+    font-size: 1.1rem;
+  }
+
+  .about-section-1 {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about-section-1 .description {
+    width: 90%;
+  }
+
+  .about-section-1 .desc-image img {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  .about-section-1 .description h2 {
+    font-size: 2rem;
+  }
+
+  .about-section-1 .description .paragraph,
+  h3 {
+    font-size: 1.2rem;
+    text-align: start;
+  }
+
+  .about-section-1 .description .quote {
+    font-size: 1.3rem;
+  }
+
+  .about-section-2 .programming-icon {
+    padding: 25px 50px;
+    font-size: 40px;
+  }
+
+  footer {
+    height: auto;
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer .footer-1,
+  .footer-2,
+  .footer-3 {
+    margin: 10px 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-head {
+    font-size: 1.3rem;
+  }
+
+  nav ul li {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .about-section-1 .description h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-section-1 .description .paragraph {
+    font-size: 1.1rem;
+  }
+
+  .about-section-1 .description .quote {
+    font-size: 1.2rem;
+  }
+
+  .about-section-2 .programming-icon {
+    padding: 20px 40px;
+    margin: 15px;
+    font-size: 35px;
+  }
+
+  .about-section-2 .programming-icon img {
+    height: 40px;
+    width: 40px;
+  }
+}

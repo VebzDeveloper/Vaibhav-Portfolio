@@ -1,4 +1,4 @@
-/* ************index.html************ */
+/* ************project.html ************ */
 header {
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
@@ -58,37 +58,6 @@ nav ul li a:hover {
   transform: scale(1.1);
 }
 
-main {
-  min-height: 100vh;
-}
-
-.section-1 {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100vh;
-  padding: 2rem;
-}
-
-.section-1 .intro {
-  color: white;
-  width: 550px;
-  font-size: 30px;
-}
-
-.section-1 .intro h2 {
-  padding: 12px 0px;
-}
-
-.section-1 .intro span {
-  color: rgb(72 119 221);
-}
-
-.section-1 .intro-image img {
-  height: 450px;
-}
-
 .heading {
   color: white;
   text-align: center;
@@ -104,62 +73,35 @@ main {
   color: rgb(72 119 221);
 }
 
-.section-2 {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 70vh;
-  padding: 2rem;
-}
-
-.section-2 .description {
-  color: white;
-  width: 58vw;
-}
-
-.section-2 .description .paragraph {
+section .heading p {
   font-size: 1.4rem;
-  padding: 15px 0px;
-  font-style: italic;
 }
 
-.section-2 .description span {
-  color: rgb(72 119 221);
-}
-
-.section-2 .desc-image img {
-  height: 300px;
-}
-
-.section-3 > div {
-  color: white;
+.project-section-1 {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  height: 160px;
 }
 
-.section-3 h2 {
-  font-size: 2.6rem;
-  padding: 8px;
-}
-
-.section-3 p {
-  font-size: 1.2rem;
-  padding: 8px;
-}
-
-.section-3 .icon {
-  font-size: 2rem;
-}
-
-.section-3 .icon a {
-  margin: 5px 10px;
+.project-section-1 .card {
+  width: 22rem;
+  background: black;
   color: white;
+  margin: 33px;
+  border: 1px solid rgb(72, 119, 221);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgb(72, 119, 221);
 }
 
-.section-3 span {
-  color: rgb(72 119 221);
+h5 {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+h5 span {
+  color: rgb(72, 119, 221);
 }
 
 footer {
@@ -185,7 +127,8 @@ footer {
   padding: 0px 10px;
 }
 
-/* ************index.html media-query************ */
+/* ************project.html media-query************ */
+
 @media screen and (max-width: 920px) {
   main {
     height: auto;
@@ -212,22 +155,6 @@ footer {
     font-size: 1.1rem;
   }
 
-  .section-1 {
-    flex-direction: column-reverse;
-    height: 80vh;
-    padding: 1rem;
-  }
-
-  .section-1 .intro {
-    text-align: center;
-    font-size: 20px;
-    width: 90%;
-  }
-
-  .section-1 .intro-image img {
-    height: 200px;
-  }
-
   .heading {
     margin: 100px 0 15px;
   }
@@ -236,34 +163,10 @@ footer {
     font-size: 1.5rem;
   }
 
-  .section-2 {
-    flex-direction: column-reverse;
-    height: auto;
-    margin-bottom: 80px;
-    padding: 1rem;
-  }
-
-  .section-2 .description {
-    width: 90%;
-  }
-
-  .section-2 .desc-image img {
-    height: 150px;
-  }
-
-  .section-2 .description .paragraph {
-    font-size: 1.1rem;
-    text-align: center;
-  }
-
-  .section-3 h2 {
-    font-size: 2rem;
-  }
-
   footer {
     height: auto;
     padding: 2rem 0;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
   }
 
   .footer {
@@ -287,38 +190,8 @@ footer {
     padding: 0 10px;
   }
 
-  .section-1 .intro {
-    font-size: 18px;
-    width: 95%;
-  }
-
-  .section-1 .intro-image img {
-    height: 180px;
-    width: auto;
-  }
-
   .heading h1 {
     font-size: 1.6rem;
-  }
-
-  .section-2 .description {
-    width: 95%;
-  }
-
-  .section-2 .description .paragraph {
-    font-size: 1rem;
-  }
-
-  .section-2 .desc-image img {
-    height: 140px;
-  }
-
-  .section-3 h2 {
-    font-size: 1.8rem;
-  }
-
-  .section-3 p {
-    font-size: 1rem;
   }
 }
 
@@ -341,43 +214,8 @@ footer {
     margin: 0.5rem 0;
   }
 
-  .section-1 {
-    padding: 1rem;
-  }
-
-  .section-1 .intro {
-    font-size: 16px;
-    width: 100%;
-  }
-
-  .section-1 .intro-image img {
-    height: 150px;
-    width: 100%;
-    object-fit: contain;
-  }
-
   .heading h1 {
     font-size: 1.4rem;
-  }
-
-  .section-2 {
-    padding: 1rem;
-  }
-
-  .section-2 .description .paragraph {
-    font-size: 0.9rem;
-  }
-
-  .section-2 .desc-image img {
-    height: 120px;
-  }
-
-  .section-3 h2 {
-    font-size: 1.6rem;
-  }
-
-  .section-3 p {
-    font-size: 0.9rem;
   }
 
   .footer {
